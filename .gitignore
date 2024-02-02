@@ -1,3 +1,4 @@
+data/*.tiff
 # History files
 .Rhistory
 .Rapp.history

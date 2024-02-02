@@ -1,0 +1,1523 @@
+---
+title: "Mapping forest aboveground biomass stocks and changes to facilitate natural climate solutions in New York State"
+subtitle: "PhD Capstone <br> Graduate Program in Environmental Science"
+author: "Lucas Johnson"
+title-slide-attributes:
+  data-background-image: figures/splash.png
+format: 
+  revealjs: 
+    standalone: true
+    center: true
+    slide-number: false
+    overview: true
+    width: 1280
+    height: 720
+    auto-stretch: false
+    theme: [default, custom.scss]
+    footer: "PhD capstone -- February 2024"
+    template-partials:
+      - title-slide.html
+---
+
+## The Paris Climate Agreement
+
+:::{.incremental}
+
+- Limit "the increase in global average temperature to well below 2° C above pre-industrial levels"
+  - Dangerous and cascading effects beyond this threshold
+
+- "to limit the temperature increase to 1.5° C above pre-industrial levels" 
+  - To avoid the most drastic and devastating impacts 
+
+:::
+
+## IPCC reporting
+
+:::{.incremental}
+- [**"More likely than not"**]{.underline} that we will reach the 1.5° C threshold by 2040
+- Very low emissions scenario: [**1.4° C**]{.underline} 
+- Intermediate emission scenario: [**2.7° C**]{.underline}
+- High emission scenario: [**4.4° C**]{.underline}
+- Most successful pathways rely on CO₂ removal technology (CDR)
+:::
+
+::: footer
+IPCC - Climate Change 2023: Synthesis Report - https://doi.org/10.59327/ipcc/ar6-9789291691647.001
+:::
+
+
+## Natural climate solutions
+
+:::columns 
+
+::: {.column width="35%"}
+
+:::{.incremental}
+- Most mature and cost-effective CDR options
+
+- Potential to offset ~21% of US net annual emissions
+
+- Forests make up the largest proportion of these sequestration potentials
+
+:::
+
+:::
+
+::: {.column width="65%"}
+![](figures/nat_clim_sol_cars.jpg){width=100% fig-align='center'}
+:::
+
+:::
+
+::: footer
+Griscom et al. 2017; https://www.nature.org/en-us/what-we-do/our-insights/perspectives/a-natural-path-for-u-s-climate-action/
+:::
+
+
+## Forest-based natural climate solutions
+
+As of 2015:
+
+:::{.incremental}
+- [**67 years**]{.underline} worth of fossil fuel emissions at today’s rate of combustion represent the amount of carbon stored in US forests.
+
+- [**15%**]{.underline} of annual fossil fuel emissions in the US are offset by growth and expansion of U.S. forests.
+:::
+
+::: footer
+Woodall et al. 2015 - https://doi.org/10.2737/NRS-GTR-154
+:::
+
+## (Simplified) Forest carbon cycle
+
+
+![](figures/cycle.jpeg){width=60% fig-align='center'}
+
+
+## New York State and the CLCPA
+
+![](figures/clcpa_clean.jpeg){width=50% fig-align='center'}
+
+
+::: footer
+CLCPA diagram https://wendelcompanies.com/ny-clcpa-draft-plan/
+:::
+
+
+## New York State and the CLCPA
+
+![](figures/clcpa.png){width=60% fig-align='center'}
+
+::: footer
+CLCPA diagram https://wendelcompanies.com/ny-clcpa-draft-plan/
+:::
+
+
+## Forests dominate the NYS landscape
+
+
+![](figures/lcmap_2019.png){width=55% fig-align='center'}
+
+
+## What role will forests play in net-zero efforts?
+
+## USFS Forest Inventory and Analysis Program
+
+::: columns
+::: {.column width="45%"}
+![](figures/fia_plot_design.jpeg){width=100% fig-align='center'}
+:::
+
+::: {.column width="10%"}
+:::
+
+
+::: {.column width="45%"}
+![](figures/lcmap_x_plots_2019.png){width=100% fig-align='center'}
+
+:::
+
+:::
+
+
+##
+![](figures/us_fia_flux.png){width=100% fig-align='center'}
+
+::: footer
+Domke 2023, https://doi.org/10.2737/WO-RB-101.
+:::
+
+
+##
+![](figures/us_fia_flux_annotated.png){width=100% fig-align='center'}
+
+::: footer
+Domke 2023, https://doi.org/10.2737/WO-RB-101.
+:::
+
+##
+![](figures/us_fia_flux.png){width=100% fig-align='center'}
+
+::: footer
+Domke 2023, https://doi.org/10.2737/WO-RB-101.
+:::
+
+
+## NYS's forest carbon sink is weakening
+
+![](figures/state_flux.png){width=75% fig-align='center'}
+
+:::footer
+Walters 2023, https://doi.org/10.2737/RDS-2023-0020
+:::
+
+## NYS's forest carbon sink is weakening
+
+![](figures/state_flux_annotated.png){width=75% fig-align='center'}
+
+:::footer
+Walters 2023, https://doi.org/10.2737/RDS-2023-0020
+:::
+
+##  1 metric ton of C0₂ equivalent is...
+
+![](figures/1TonneGHGsEquivilency.webp){width=55% fig-align='center'}
+
+::: footer
+Citizens for public justice, Canada - https://cpj.ca/infographic-what-is-a-tonne-of-greenhouse-gas-emissions/
+:::
+
+## Strengthening the forest carbon sink
+
+::: columns 
+
+::: {.column width="45%"}
+
+:::{.incremental}
+-  Avoided deforestation
+
+- Reforestation/afforestation
+
+- Improved forest management
+:::
+
+:::
+
+
+::: {.column width="55%"}
+![](figures/gas_gauge.png){width=100% fig-align='center'}
+:::
+
+:::
+
+
+:::footer
+CAFRI's NY Forest Carbon Assessment - https://www.esf.edu/cafri-ny/documents/cafri-report-2023.pdf
+:::
+
+
+## How do we make this information actionable?
+
+## Forest biomass maps
+
+::: {.incremental}
+
+- Identify stocks that should be protected
+
+- Prioritize areas for management
+
+- Quantify policy and management outcomes
+
+- Identify spatiotemporal patterns and drivers of change
+
+:::
+
+
+## My work
+
+::: {.incremental}
+
+- Mapping forest biomass stocks with aerial LiDAR point clouds
+
+- Modeling historical forest biomass stocks and stock changes with Landsat imagery
+  - Provides a basis for monitoring
+
+- Propagating uncertainty through our modeling pipeline
+:::
+
+## The power of LiDAR
+
+![](figures/lidar_3d.png){width=90% fig-align='center'}
+
+## The power of LiDAR
+
+:::columns 
+
+
+::: {.column width="40%"}
+
+- Canopy height raster
+
+- "Slices" of the point cloud
+
+- 2D summaries
+
+:::
+
+::: {.column width="60%"}
+
+![](figures/lidar_2d.png){width=100% fig-align='center'}
+:::
+
+:::
+
+## LiDAR in NYS
+
+
+:::columns
+
+::: {.column width="30%"}
+
+- Expensive!
+
+- LiDAR acquired for irregular areas, and at irregular intervals
+
+- A spatiotemporal patchwork
+
+:::
+
+::: {.column width="70%"}
+
+![](figures/regions_map.png){width=100% fig-align='center'}
+:::
+
+:::
+
+
+## LiDAR models
+::: columns
+
+::: {.column width="45%"}
+
+- LiDAR point clouds clipped to FIA plots
+
+- Point cloud metrics summarized
+
+- ML ensembles
+
+![](figures/fia_plot_design.jpeg){width=40% fig-align='center'}
+:::
+
+
+
+::: {.column width="55%"}
+![](figures/las_3d_and_chm.png){width=40% fig-align='center'}
+:::
+
+:::
+
+
+## Snapshots
+
+::: columns
+
+::: {.column width="30%"}
+- Warren, Washington, and Essex counties
+- 2015
+:::
+
+::: {.column width="70%"}
+![](figures/wwe_snap.png){width=100% fig-align='center'}
+:::
+
+:::
+## Snapshots
+
+::: columns
+
+::: {.column width="30%"}
+- Cayuga and Oswego counties
+- 2018
+:::
+
+::: {.column width="70%"}
+![](figures/co_snap.png){width=70% fig-align='center'}
+:::
+
+:::
+
+## Snapshots
+
+::: columns
+
+::: {.column width="30%"}
+- Allegany and Steuben counties
+- 2016
+:::
+
+::: {.column width="70%"}
+![](figures/as_snap.png){width=90% fig-align='center'}
+:::
+
+:::
+
+## Snapshots
+
+::: columns
+
+::: {.column width="30%"}
+- Ulster, Dutchess, and Orange counties
+- 2014
+:::
+
+::: {.column width="70%"}
+![](figures/c3_snap.png){width=90% fig-align='center'}
+:::
+:::
+## A spatiotemporal patchwork
+
+![](figures/lidar_region_plot.png){width=120% fig-align='center'}
+
+## Upshot of this LiDAR-AGB patchwork
+
+:::{.incremental}
+
+- Accurate snapshots!
+
+- Not useful for stock-change
+
+- We were hoping for statewide coverage sooner... 
+
+- We've (almost) got it now!
+
+:::
+
+## Stock-change methods and carbon accounting
+
+::: {.incremental}
+
+::: columns
+
+::: {.column width="50%"}
+
+- Need repeated measurements / estimates / inventories
+
+- Differences between time 1 and time 2
+
+- Positive differences (growth) = removals from the atmosphere
+
+- Negative differences (disturbance) = emissions to the atmosphere
+
+:::
+
+::: {.column width="50%"}
+
+![](figures/stock_change.png){width=100% fig-align='center'}
+
+:::
+
+:::
+
+:::
+
+## NASA Landsat - a consistent record
+
+::: columns
+
+::: {.column width="30%"}
+- Federally funded
+
+- Open data
+
+- Global coverage
+
+- 16-day cycle
+:::
+
+::: {.column width="70%"}
+![](figures/landsat_timeline.jpeg){width=100% fig-align='center'}
+:::
+
+:::
+
+
+::: footer
+USGS - https://www.usgs.gov/media/images/landsat-missions-timeline
+:::
+
+## NASA Landsat - a consistent record
+
+::: columns
+
+:::{.column width="30%"}
+
+- Optical imagery
+- Red, Green, Blue, Near-infrared
+- 30 m resolution
+- Stacking to produce pixel-level time series
+
+:::
+
+:::{.column width="70%"}
+
+![](figures/landtrendr.jpeg){width=100% fig-align='center'}
+
+:::
+
+:::
+
+
+::: footer
+OSU eMapR group - https://emapr.github.io/LT-GEE/landtrendr.html
+:::
+
+## Landsat models 
+
+::: columns
+
+::: {.column width=50%}
+Direct 
+
+![](figures/fia_landsat.png){fig-align='center' width=70%}
+:::
+
+::: {.column width=50%}
+
+Indirect
+
+![](figures/las_landsat.png){fig-align='center' width=70%}
+:::
+
+:::
+
+## Landsat models - Direct
+
+::: columns
+
+::: {.column width=50%}
+
+- Training models with sample of FIA plots in NYS
+
+- A few thousand elligble plots
+
+- More accurate
+:::
+
+::: {.column width=50%}
+
+![](figures/fia_landsat.png){fig-align='center' width=70%}
+:::
+
+:::
+
+## Landsat models - Indirect
+
+::: columns
+
+::: {.column width=50%}
+
+- Training models with LiDAR-AGB predictions
+
+- 20k pixels sampled
+
+- Improved saturation point
+
+- Increased spatial heterogeneity
+
+:::
+
+::: {.column width=50%}
+
+![](figures/las_landsat.png){fig-align='center' width=70%}
+:::
+
+:::
+
+
+## Landsat models - Ensemble
+
+::: columns
+
+::: {.column width="50%"}
+- Averaging predictions from direct and indirect models
+
+- Combining the strengths from each individual approach
+
+- Best of both worlds 
+:::
+
+::: {.column width="50%"}
+
+![](figures/model_averaging.jpeg){width=100% fig-align='center'}
+
+:::
+
+:::
+
+:::footer
+Cartoon CC-BY 4.0 Allison Horst
+:::
+
+## Comparison at Huntington Wildlife Forest
+
+![](figures/hwf_inset.png){width=55% fig-align='center'}
+
+
+## Landsat vs LiDAR
+
+![](figures/hwf_agb_x_chm.png){width=100% fig-align='center'}
+
+
+## Landsat vs LiDAR
+
+![](figures/hwf_agb_x_chm_tall.png){width=100% fig-align='center'}
+
+
+## Landsat vs LiDAR
+
+![](figures/hwf_agb_x_chm_hpeak.png){width=100% fig-align='center'}
+
+## Landsat vs LiDAR
+
+![](figures/hwf_agb_x_chm_border.png){width=100% fig-align='center'}
+
+## Landsat vs LiDAR
+
+![](figures/hwf_agb_x_chm.png){width=100% fig-align='center'}
+
+## Landsat vs LiDAR
+
+![](figures/expand_time_stack.png){width=60% fig-align='center'}
+
+## Zooming in to a working forest...
+
+![](figures/hwf_agb_x_chm_harv.png){width=100% fig-align='center'}
+
+## {background-image="movie/agb.gif" background-size="85% auto" background-position="50% 50%"}
+
+## {background-image="figures/agb_mov_grow.png" background-size="70% auto" background-position="50% 50%"}
+
+## {background-image="figures/agb_mov_loss.png" background-size="70% auto" background-position="50% 50%"}
+
+## Management records{.smaller}
+
+::: columns
+
+:::{.column width="15%"}
+
+They match!
+
+  - Timing
+  - Severity
+  - Recovery
+  
+:::
+
+::: {.column width="85%"}
+![](figures/horizontal_multi_harvest.jpg){width='100%' fig-align='right'}
+:::
+
+:::
+
+## Stock changes {.smaller background-image="figures/nys_agb_diff.png" background-size="50% auto" background-position="80% 50%"}
+
+::: columns
+
+::: {.column width="35%"}
+
+- Characterize change across NYS
+
+- Brown = disturbance = emissions
+
+- Green = growth = removals
+
+:::
+
+:::
+
+## Parcel summaries
+
+![](figures/parcel_sumamries.png){width=80% fig-align='center'}
+
+## Upshot of statewide Landsat-AGB time series
+
+
+
+:::{.incremental}
+
+::: columns
+
+::: {.column width="50%"}
+
+Pros
+
+- Track historical forest dynamics
+
+- Efficient, open data and tooling
+  - FIA
+  - Landsat imagery
+
+- Ongoing monitoring
+
+:::
+
+::: {.column width="50%"}
+Cons 
+
+- Spectral information is limited
+  
+  - Saturation
+  - Defoliation events
+  - Green-up before grow-up
+
+:::
+
+:::
+
+:::
+
+## Pretty pictures, or scientific inference?
+
+## Pretty pictures, or scientific inference?{.smaller}
+
+
+
+:::{.incremental}
+
+
+::: columns
+
+::: {.column width='50%'}
+
+- Map agreement/accuracy 
+  
+  - How close are predictions to truth? (FIA)
+  
+  - Describes our maps in aggregate (NYS)
+
+- Prediction uncertainty
+
+  - What is the range of possible predictions?
+  
+  - How precise are our predictions?
+  
+  - Describes arbitrary sub-regions of our maps
+  
+:::
+
+::: {.column width='50%'}
+
+![](figures/precision_accuracy.png){width=100% fig-align='center'}
+
+:::
+
+:::
+
+:::
+
+:::footer
+Quoted from McRoberts 2011 - https://doi.org/10.1016/j.rse.2010.10.013
+:::
+
+
+## Map accuracy
+
+::: columns
+
+::: {.column width="30%"}
+
+- Compare our maps to FIA plot-level estimates
+
+- 20% holdout plots
+
+:::
+
+::: {.column width="70%"}
+
+![](figures/lcmap_x_plots_2019.png){width=75% fig-align='center'}
+:::
+
+:::
+
+## Map accuracy
+
+::: columns 
+
+::: {.column width="30%"}
+- Comparing across scales
+
+- Aggregating FIA estimates and our maps within hexagonal units
+
+- Agreement increases with aggregation
+:::
+
+::: {.column width="70%"}
+![](figures/agg_landsat_acc.png){width=85% fig-align='center'}
+:::
+
+:::
+
+
+## Prediction uncertainty
+
+::: columns
+
+::: {.column width="40%"}
+
+- A daisy chain of models
+:::
+
+::: {.column width="60%"}
+
+![](figures/model_daisy_chain.png){width=55% fig-align='center'}
+
+:::
+
+:::
+
+## Prediction uncertainty
+
+::: columns
+
+::: {.column width="40%"}
+
+- A daisy chain of models
+  - FIA plots
+:::
+
+::: {.column width="60%"}
+
+![](figures/model_daisy_chain_fia.png){width=55% fig-align='center'}
+
+:::
+
+:::
+
+## Prediction uncertainty
+
+::: columns
+
+::: {.column width="40%"}
+
+- A daisy chain of models
+  - FIA plots
+  
+  - LiDAR-AGB
+:::
+
+::: {.column width="60%"}
+
+![](figures/model_daisy_chain_lidar.png){width=55% fig-align='center'}
+
+:::
+
+:::
+
+## Prediction uncertainty
+
+::: columns
+
+::: {.column width="40%"}
+
+- A daisy chain of models
+  - FIA plots
+  
+  - LiDAR-AGB
+  
+  - Landsat-AGB
+:::
+
+::: {.column width="60%"}
+
+![](figures/model_daisy_chain_landsat.png){width=55% fig-align='center'}
+
+:::
+
+:::
+
+
+## Prediction uncertainty
+
+::: columns
+
+::: {.column width="40%"}
+
+- A daisy chain of models
+  - FIA plots
+  
+  - LiDAR-AGB
+  
+  - Landsat-AGB
+
+- Propagating uncertainty
+
+:::
+
+::: {.column width="60%"}
+
+![](figures/model_daisy_chain.png){width=55% fig-align='center'}
+
+:::
+
+:::
+
+## Prediction uncertainty
+
+::: columns
+
+::: {.column width="40%"}
+
+- A daisy chain of models
+  - FIA plots
+  
+  - LiDAR-AGB
+  
+  - Landsat-AGB
+
+- Propagating uncertainty
+  
+  - First cut - direct Landsat models only
+
+:::
+
+::: {.column width="60%"}
+
+![](figures/model_daisy_chain_annotated.png){width=55% fig-align='center'}
+
+:::
+
+:::
+
+
+## Prediction uncertainty
+
+::: columns
+
+::: {.column width="50%"}
+
+:::{.incremental}
+- Uncertainty in reference data
+- Uncertainty due to training the model on a limited sample
+- Uncertainty due to the model not being able to represent
+all of the variation in the response variable
+  - AKA prediction error
+
+:::
+:::
+
+:::
+
+:::footer
+Wadoux et al. 2023 - https://doi.org/10.1111/2041-210X.14106
+:::
+
+## Prediction uncertainty
+
+::: columns
+
+::: {.column width="50%"}
+
+- [Uncertainty in reference data]{.underline}
+- [Uncertainty due to training the model on a limited sample]{.underline}
+- [Uncertainty due to the model not being able to represent
+all of the variation in the response variable]{style="opacity:.4"}
+  - [AKA prediction error]{style="opacity:.4"}
+
+:::
+
+::: {.column width="50%"}
+
+Estimate by iterative bootstrapping 
+
+![](normal_movie/norm.gif){width=100% fig-align='center'}
+:::
+
+:::
+
+:::footer
+Wadoux et al. 2023 - https://doi.org/10.1111/2041-210X.14106
+:::
+
+## Uncertainty in reference data
+
+How do we get tree-level biomass?
+
+
+::: columns 
+
+::: {.column width="30%"}
+
+- DBH
+
+- Height
+
+- Species
+
+- Decay class, % rotten
+
+- Allometric models
+
+:::
+
+::: {.column width="70%"}
+
+![](figures/model_daisy_chain_annotated_2.png){width=40% fig-align='center'}
+
+:::
+
+
+:::
+
+## Uncertainty in reference data
+
+How do we get tree-level biomass?
+
+
+::: columns 
+
+::: {.column width="30%"}
+
+- DBH
+
+- Height
+
+- Species
+
+- Decay class, % rotten
+
+- Allometric models
+ 
+:::
+
+::: {.column width="70%"}
+![](figures/heath_allometry.jpeg){width=100% fig-align='center'}
+:::
+
+:::
+
+## Uncertainty in reference data
+
+- Measurement error distributions
+
+- Tree measurement errors are sampled at random
+
+
+![](figures/normal_dists_tree.png){width=100% fig-align='center'}
+
+:::footer
+Distribution parameters from Yanai et al. 2022 - https://doi.org/10.1139/cjfr-2022-0062
+:::
+
+## Uncertainty in reference data
+
+- Measurement error distributions
+
+- Tree measurement errors are sampled at random
+
+
+![](figures/normal_dists_tree_1.png){width=100% fig-align='center'}
+
+:::footer
+Distribution parameters from Yanai et al. 2022 - https://doi.org/10.1139/cjfr-2022-0062
+:::
+
+## Uncertainty in reference data
+
+- Measurement error distributions
+
+- Tree measurement errors are sampled at random
+
+
+![](figures/normal_dists_tree_2.png){width=100% fig-align='center'}
+
+:::footer
+Distribution parameters from Yanai et al. 2022 - https://doi.org/10.1139/cjfr-2022-0062
+:::
+
+## Uncertainty in reference data
+
+Plot locations
+
+::: columns
+
+
+:::{.column width="50%"}
+
+![](figures/fia_plot_design.jpeg){width=80% fig-align='center'}
+:::
+
+::: {.column width="50%"}
+
+![](figures/normal_dists_plot.png){width=90% fig-align='center'}
+:::
+
+:::
+
+## Uncertainty in reference data
+
+Plot locations
+
+::: columns
+
+
+:::{.column width="50%"}
+
+![](figures/fia_plot_design.jpeg){width=80% fig-align='center'}
+:::
+
+::: {.column width="50%"}
+
+![](figures/normal_dists_plot_1.png){width=90% fig-align='center'}
+:::
+
+:::
+
+## Uncertainty in reference data
+
+Plot locations
+
+::: columns
+
+
+:::{.column width="50%"}
+
+![](figures/fia_plot_design.jpeg){width=80% fig-align='center'}
+:::
+
+::: {.column width="50%"}
+
+![](figures/normal_dists_plot_2.png){width=90% fig-align='center'}
+:::
+
+:::
+
+
+## Uncertainty from a limited sample
+
+- FIA is a random sample of the landscape
+
+- Repeatedly retrain models with different samples
+
+- New sample = new model = new predictions
+
+
+![](figures/bootstrap_ex.png){width=100% fig-align='center'}
+
+:::footer
+Bootstrap sample figure - https://stats.stackexchange.com/questions/246726/size-of-bootstrap-samples
+:::
+
+## Uncertainty from a limited sample
+
+- FIA is a random sample of the landscape
+
+- Repeatedly retrain models with different samples
+
+- New sample = new model = new predictions
+
+
+![](figures/bootstrap_ex_1.png){width=100% fig-align='center'}
+
+:::footer
+Bootstrap sample figure - https://stats.stackexchange.com/questions/246726/size-of-bootstrap-samples
+:::
+
+## Uncertainty from a limited sample
+
+- FIA is a random sample of the landscape
+
+- Repeatedly retrain models with different samples
+
+- New sample = new model = new predictions
+
+![](figures/bootstrap_ex_2.png){width=100% fig-align='center'}
+
+:::footer
+Bootstrap sample figure - https://stats.stackexchange.com/questions/246726/size-of-bootstrap-samples
+:::
+
+## Uncertainty from a limited sample
+
+- FIA is a random sample of the landscape
+
+- Repeatedly retrain models with different samples
+
+- New sample = new model = new predictions
+
+
+![](figures/bootstrap_ex_3.png){width=100% fig-align='center'}
+
+:::footer
+Bootstrap sample figure - https://stats.stackexchange.com/questions/246726/size-of-bootstrap-samples
+:::
+
+## Uncertainty from a limited sample
+
+- FIA is a random sample of the landscape
+
+- Repeatedly retrain models with different samples
+
+- New sample = new model = new predictions
+
+
+![](figures/bootstrap_ex_4.png){width=100% fig-align='center'}
+
+:::footer
+Bootstrap sample figure - https://stats.stackexchange.com/questions/246726/size-of-bootstrap-samples
+:::
+
+
+##  1000 bootstrap iterations{.smaller}
+
+:::{.incremental}
+
+::: columns
+
+::: {.column width="30%"}
+- For each iteration
+  - New plot sample
+  - New reference data
+    - Tree estimates
+    - Plot locations
+  - New model 
+  - New predictions for each pixel
+- Assess variability/precision of predictions over the 1000 iterations
+:::
+
+::: {.column width="70%"}
+![](normal_movie/norm.gif){width=100% fig-align='center'}
+:::
+
+:::
+
+:::
+
+## Pixel uncertainty
+![](figures/parcel_viz_3_bootvar.png){width=85% fig-align='center'}
+
+## Prediction uncertainty
+
+::: columns
+
+::: {.column width="50%"}
+
+- [Uncertainty in reference data]{style="opacity:.4"}
+- [Uncertainty due to training the model on a limited sample]{style="opacity:.4"}
+- [Uncertainty due to the model not being able to represent
+all of the variation in the response variable]{.underline}
+  - [AKA prediction error]{.underline}
+
+:::
+
+::: {.column width="50%"}
+Residual variability
+
+![](figures/residuals.png)
+:::
+
+:::
+
+:::footer
+Wadoux et al. 2023 - https://doi.org/10.1111/2041-210X.14106
+:::
+
+## Residual variability
+
+![](figures/skedasticity.jpeg){width="100%" fig-align='center'}
+
+:::footer
+https://analystprep.com/study-notes/cfa-level-2/quantitative-method/heteroskedasticity-serial-correlation/
+:::
+
+## Residual variability
+
+![](figures/skedasticity_markup.jpeg){width="100%" fig-align='center'}
+
+:::footer
+https://analystprep.com/study-notes/cfa-level-2/quantitative-method/heteroskedasticity-serial-correlation/
+:::
+
+
+## Pixel uncertainty
+![](figures/parcel_viz_3_resvar.png){width=85% fig-align='center'}
+
+## Pixel uncertainty{background-image="figures/parcel_viz_3_allvar.png" background-size="90% auto" background-position="50% 80%" }
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+## Aggregation to reduce uncertainty
+
+:::{.incremental}
+
+- Individual pixel predictions are highly variable
+
+- Pixels are not ecologically or practically meaningful
+
+- Aggregating smooths out variation
+
+- Pixel-level errors may cancel out
+
+- The degree to which they cancel out depends on spatial correlation
+
+:::
+
+## Aggregation to reduce uncertainty
+
+![](figures/spat_corr.png){fig-align='center' width='100%'}
+
+:::footer
+Amaya et al. 2019 - https://doi.org/10.1016/j.strusafe.2019.101912
+:::
+
+## (Simplified) Formula for aggregate uncertainty
+
+![](figures/uncertainty_formula.png){width="100%" fig-align='center'}
+
+## Uncertainty x parcel size{.smaller}
+
+::: {.incremental}
+
+::: columns
+
+:::{.column width="30%"}
+
+- Parcel uncertainty (standard error) decreases as a function of parcel size (acres)
+
+- The range of spatial autocorrelation in our model errors is roughly 1 km
+
+- 1 km² = ~250 acres -> where uncertainty flattens out
+
+:::
+
+:::{.column width="70%"}
+![](figures/group_distributions.png){width="100%" fig-align='center'}
+:::
+
+:::
+
+:::
+
+## {background-image="movie_cis/agb.gif" background-size="85% auto" background-position="50% 50%"}
+
+## A range of outcomes - max growth
+
+::: columns
+
+:::{.column width='18%'}
+<br>
+<br>
+<br>
+<br>
+<br>
+[~70,000 Mg]{style="color: #2db83d"}
+:::
+
+:::{.column width='82%'}
+![](figures/options_plot_max_grow.png){width='85%' fig-align='center'}
+:::
+
+:::
+
+## A range of outcomes - min growth
+
+::: columns
+
+:::{.column width='18%'}
+<br>
+<br>
+<br>
+<br>
+<br>
+[~25,000 Mg]{style="color: #2db83d"}
+:::
+
+:::{.column width='82%'}
+![](figures/options_plot_min_grow.png){width='85%' fig-align='center'}
+:::
+
+:::
+
+## A range of outcomes - max loss
+
+::: columns
+
+:::{.column width='18%'}
+<br>
+<br>
+<br>
+<br>
+<br>
+[~50,000 Mg]{style="color: #7C4700"}
+:::
+
+:::{.column width='82%'}
+![](figures/options_plot_max_loss.png){width='85%' fig-align='center'}
+:::
+
+:::
+
+## A range of outcomes - min loss
+
+::: columns
+
+:::{.column width='18%'}
+<br>
+<br>
+<br>
+<br>
+<br>
+[~7,000 Mg]{style="color: #7C4700"}
+:::
+
+:::{.column width='82%'}
+![](figures/options_plot_min_loss.png){width='85%' fig-align='center'}
+:::
+
+:::
+
+
+
+## Upshot of accuracy and uncertainty
+
+:::{.incremental}
+
+- Accuracy assessment describes our maps in aggregate (all of NYS)
+  - Compare to FIA across a range of scales 
+
+- Uncertainty can describe arbitrary map sub-regions
+
+  - Help map users make decisions
+
+  - Identify a range of estimates/outcomes
+
+  - Attributing sources of uncertainty -> identify areas for improvement
+  
+- Room for improvement
+  - New satellites and sensors
+  - More data to collect
+
+:::
+
+## In summary
+
+:::{.incremental}
+
+- Snapshots of forest biomass stocks with aerial LiDAR point clouds
+
+- Historical mapping and continued monitoring of forest biomass stocks and stock changes with Landsat imagery
+
+- Propagating uncertainty through our modeling pipeline
+
+:::
+
+## Supporting NYS {.smaller background-image="figures/nys_agb_diff.png" background-position="90% 60%" background-size="35% auto" }
+
+:::{.incremental}
+
+- Identify ownership parcels with large carbon stocks to protect
+  - [Avoided deforestation]{.underline}
+  - NYSERDA Solar Scorecard
+  - Land trusts
+  
+- Quantify carbon outcomes - past and forthcoming
+  - [Improved management]{.underline}
+  - [Reforestation]{.underline}
+  - NYS DEC evaluating management plans
+  - MRV for NY connects
+  
+:::
+
+## Forest-based natural climate solutions at large
+
+:::{.incremental}
+- There's lots of excitement, but also doubt and disapproval
+
+- There are risks and threats
+
+- No silver bullets -- one of many tools
+
+- The landscape can only do so much -- [need to drastically reduce emissions]{.underline}
+:::
+
+
+## Thank you!{.left background-image="figures/esf_trees.jpg" background-position="75% 50%" background-size="35% auto"}
+
+
+::: footer
+:::
+
+## LiDAR accuracy
+
+::: columns
+
+::: {.column width=20%}
+- RMSE 46.0
+- %RMSE 38.7
+- MAE: 34.0
+- %MAE: 28.6
+- ME: 3.6
+- R^2^: 0.59
+:::
+
+::: {.column width=80%}
+![](figures/lidar_acc.png){width=60% fig-align='center'}
+:::
+
+:::
+
+## {background-image="figures/hwf_methods_compare.png" background-position="50%" background-size="60% auto"}
+
+## Landsat accuracy
+
+![](figures/landsat_methods_acc_combo.png){fig-align='center' width=80%}
+
+
+## Trends
+
+![](figures/timeseries_combo.png){width=100% fig-align='center'}
+
+## Residual variability
+
+![](figures/residual_variance_model.png){width=100% fig-align='center'}
+
+
+## Semivariogram
+
+![](figures/variograms.png){width=100% fig-align='center'}
+
+
+## Parcel sample
+
+![](figures/tax_parcel_summary.png){width=40% fig-align='center'}
+
+## Variance components
+
+![](figures/uncertainty_contributions.png){fig-align='center' width='75%'}
+
+## Parcel characteristics -> total uncertainty
+
+::: columns
+
+:::{.column width=20%}
+
+- MAE:  1.32
+- RMSE: 2.21
+- ME:  -0.02
+- R^2^: 0.94
+:::
+
+::: {.column width=80%}
+![](figures/total_sd_accuracy.png){width=60% fig-align='center'}
+:::
+
+:::
