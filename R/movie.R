@@ -56,19 +56,17 @@ sum_plot <- function(data, index) {
       color = ifelse(i == index, "highlight", "regular")
     )
   }))
-  min_val <- floor(min(plot_data$total) / 50) * 50
-  max_val <- ceiling(max(plot_data$total) / 50) * 50
   ggplot(plot_data, aes(x = year, y = total)) +
     geom_line(color = 'black') +
     geom_point(
-      data = plot_data |> dplyr::filter(color == "highlight"), color = "red",
+      data = plot_data |> dplyr::filter(color == "highlight"), color = "black",
       size = 3
     ) +
     theme_minimal() +
     ylab("AGB (Thousands Mg)") +
     xlab("Year") +
     scale_x_continuous(expand = c(0.005, 0.005), limits = c(1990, 2020), breaks = c(seq(1990, 2015, 5), 2019)) +
-    scale_y_continuous(limits = c(min_val, max_val)) +
+    scale_y_continuous(limits = c(350, 450), breaks = seq(350, 450, 25)) +
     theme_minimal() +
     theme(
       panel.grid = element_blank(),

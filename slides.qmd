@@ -769,7 +769,7 @@ Quoted from McRoberts 2011 - https://doi.org/10.1016/j.rse.2010.10.013
 
 ::: {.column width="60%"}
 
-![](figures/model_daisy_chain.png){width=55% fig-align='center'}
+![](figures/model_funnels.png){width=55% fig-align='center'}
 
 :::
 
@@ -787,7 +787,7 @@ Quoted from McRoberts 2011 - https://doi.org/10.1016/j.rse.2010.10.013
 
 ::: {.column width="60%"}
 
-![](figures/model_daisy_chain_fia.png){width=55% fig-align='center'}
+![](figures/model_funnels_fia.png){width=55% fig-align='center'}
 
 :::
 
@@ -807,7 +807,7 @@ Quoted from McRoberts 2011 - https://doi.org/10.1016/j.rse.2010.10.013
 
 ::: {.column width="60%"}
 
-![](figures/model_daisy_chain_lidar.png){width=55% fig-align='center'}
+![](figures/model_funnels_lidar.png){width=55% fig-align='center'}
 
 :::
 
@@ -829,7 +829,7 @@ Quoted from McRoberts 2011 - https://doi.org/10.1016/j.rse.2010.10.013
 
 ::: {.column width="60%"}
 
-![](figures/model_daisy_chain_landsat.png){width=55% fig-align='center'}
+![](figures/model_funnels_landsat.png){width=55% fig-align='center'}
 
 :::
 
@@ -855,7 +855,7 @@ Quoted from McRoberts 2011 - https://doi.org/10.1016/j.rse.2010.10.013
 
 ::: {.column width="60%"}
 
-![](figures/model_daisy_chain.png){width=55% fig-align='center'}
+![](figures/model_funnels.png){width=55% fig-align='center'}
 
 :::
 
@@ -882,7 +882,7 @@ Quoted from McRoberts 2011 - https://doi.org/10.1016/j.rse.2010.10.013
 
 ::: {.column width="60%"}
 
-![](figures/model_daisy_chain_annotated.png){width=55% fig-align='center'}
+![](figures/model_funnels_first.png){width=55% fig-align='center'}
 
 :::
 
@@ -961,7 +961,7 @@ How do we get tree-level biomass?
 
 ::: {.column width="70%"}
 
-![](figures/model_daisy_chain_annotated_2.png){width=40% fig-align='center'}
+![](figures/model_funnels_ref.png){width=40% fig-align='center'}
 
 :::
 
@@ -1307,84 +1307,75 @@ Amaya et al. 2019 - https://doi.org/10.1016/j.strusafe.2019.101912
 
 :::
 
+## Parcel summaries
+
+![](figures/parcel_stderr.png){width=90% fig-align='center'}
+
+
 ## {background-image="movie_cis/agb.gif" background-size="85% auto" background-position="50% 50%"}
 
 ## A range of outcomes - max growth
 
 ::: columns
 
-:::{.column width='18%'}
+:::{.column width='20%'}
 <br>
 <br>
 <br>
 <br>
 <br>
-[~70,000 Mg]{style="color: #2db83d"}
+[~75,000 Mg]{style="color: #2db83d"}
 :::
 
-:::{.column width='82%'}
+:::{.column width='80%'}
 ![](figures/options_plot_max_grow.png){width='85%' fig-align='center'}
 :::
 
 :::
 
-## A range of outcomes - min growth
+## A range of outcomes - no change
 
 ::: columns
 
-:::{.column width='18%'}
+:::{.column width='20%'}
 <br>
 <br>
 <br>
 <br>
-<br>
-[~25,000 Mg]{style="color: #2db83d"}
+[0 Mg]{style="color: blue"}
 :::
 
-:::{.column width='82%'}
-![](figures/options_plot_min_grow.png){width='85%' fig-align='center'}
+:::{.column width='80%'}
+![](figures/options_plot_nochng.png){width='85%' fig-align='center'}
 :::
 
 :::
 
-## A range of outcomes - max loss
+## A range of outcomes - a realistic take{.smaller}
+
+:::{.incremental}
 
 ::: columns
 
-:::{.column width='18%'}
-<br>
-<br>
-<br>
-<br>
-<br>
-[~50,000 Mg]{style="color: #7C4700"}
+:::{.column width='20%'}
+- [We underpredict the most AGB dense stands]{.smaller}
+
+- We overpredict the least AGB dense stands
+
+- Our recovery is too fast
+
+- In general: the magnitude of uncertainty is greater than the magnitude of the changes
+we are trying to track
 :::
 
-:::{.column width='82%'}
-![](figures/options_plot_max_loss.png){width='85%' fig-align='center'}
-:::
 
-:::
-
-## A range of outcomes - min loss
-
-::: columns
-
-:::{.column width='18%'}
-<br>
-<br>
-<br>
-<br>
-<br>
-[~7,000 Mg]{style="color: #7C4700"}
-:::
-
-:::{.column width='82%'}
-![](figures/options_plot_min_loss.png){width='85%' fig-align='center'}
+:::{.column width='80%'}
+![](figures/options_plot_mytake.png){width='85%' fig-align='center'}
 :::
 
 :::
 
+:::
 
 
 ## Upshot of accuracy and uncertainty
@@ -1521,3 +1512,7 @@ Amaya et al. 2019 - https://doi.org/10.1016/j.strusafe.2019.101912
 :::
 
 :::
+
+## Parcel summaries
+
+![](figures/parcel_rse.png){width=100% fig-align='center'}

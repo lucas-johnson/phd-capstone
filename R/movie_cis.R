@@ -52,28 +52,49 @@ sum_plot <- function(data, index) {
     d <- data[[i]]
     list(
       total = d$total,
-      upper_total = d$upper_total,
-      lower_total = d$lower_total,
+      upper_95_total = d$upper_95_total,
+      lower_95_total = d$lower_95_total,
+      upper_90_total = d$upper_90_total,
+      lower_90_total = d$lower_90_total,
+      upper_80_total = d$upper_80_total,
+      lower_80_total = d$lower_80_total,
       year = d$year,
       color = ifelse(i == index, "highlight", "regular")
     )
-  }))
-  min_val <- floor(min(plot_data$lower_total) / 50) * 50
-  max_val <- ceiling(max(plot_data$upper_total) / 50) * 50
+  })) |> 
+    tidyr::pivot_longer(dplyr::starts_with('upper'), 
+                        values_to = 'upper', 
+                        names_to = 'upper_pi',
+                        ) |> 
+    tidyr::pivot_longer(dplyr::starts_with('lower'), 
+                        values_to = 'lower', 
+                        names_to = 'lower_pi',
+    ) |> 
+    dplyr::mutate(upper_pi = gsub('upper_', '', upper_pi),
+                  upper_pi = gsub('_total', '', upper_pi),
+                  lower_pi = gsub('lower_', '', lower_pi),
+                  lower_pi = gsub('_total', '', lower_pi))
+  
   ggplot(plot_data, aes(x = year)) +
     geom_line(aes(y = total), color = 'black') +
-    geom_line(aes(y = upper_total), color = 'black', linetype='longdash', alpha = 0.7) +
-    geom_line(aes(y = lower_total), color = 'black', linetype='longdash', alpha = 0.7) +
+    geom_line(aes(y = upper, color = upper_pi), linetype='longdash') +
+    geom_line(aes(y = lower, color = lower_pi),  linetype='longdash', show.legend = FALSE) +
+    scale_color_viridis_d(
+      option = "inferno", name = "Prediction Interval",
+      end = .9,
+      begin = 0.3,
+      labels = function(x) paste0(x, "%")
+    ) +
     geom_point(
       aes(y = total),
-      data = plot_data |> dplyr::filter(color == "highlight"), color = "red",
+      data = plot_data |> dplyr::filter(color == "highlight"), color = "black",
       size = 3
     ) +
     theme_minimal() +
     ylab("AGB (Thousands Mg)") +
     xlab("Year") +
     scale_x_continuous(expand = c(0.005, 0.005), limits = c(1990, 2020), breaks = c(seq(1990, 2015, 5), 2019)) +
-    scale_y_continuous(limits = c(min_val, max_val)) +
+    scale_y_continuous(limits = c(300, 475), breaks = seq(300, 475, 25)) +
     theme_minimal() +
     theme(
       panel.grid = element_blank(),
@@ -184,12 +205,20 @@ predict_data <- lapply(cleaned_data, \(cd) {
                    perimeter = units::drop_units(cd$perimeter),
                    veg_prop = cd$forest_prop, 
                    year = cd$year)
-  cd$se <- predict(lm, df)
-  cd$upper <- cd$mean + (1.96 * cd$se)
-  cd$lower <- cd$mean - (1.96 * cd$se)
+  cd$se <- exp(predict(lm, df))
+  cd$upper_95 <- cd$mean + (1.96 * cd$se)
+  cd$lower_95 <- cd$mean - (1.96 * cd$se)
+  cd$upper_90 <- cd$mean + (1.645 * cd$se)
+  cd$lower_90 <- cd$mean - (1.645 * cd$se)
+  cd$upper_80 <- cd$mean + (1.282 * cd$se)
+  cd$lower_80 <- cd$mean - (1.282 * cd$se)
   cd$total <- cd$mean * cd$area_ha / 1000
-  cd$upper_total <- cd$upper * cd$area_ha / 1000
-  cd$lower_total <- cd$lower * cd$area_ha / 1000
+  cd$upper_95_total <- cd$upper_95 * cd$area_ha / 1000
+  cd$lower_95_total <- cd$lower_95 * cd$area_ha / 1000
+  cd$upper_90_total <- cd$upper_90 * cd$area_ha / 1000
+  cd$lower_90_total <- cd$lower_90 * cd$area_ha / 1000
+  cd$upper_80_total <- cd$upper_80 * cd$area_ha / 1000
+  cd$lower_80_total <- cd$lower_80 * cd$area_ha / 1000
   return(cd)
   
 }) 
@@ -232,21 +261,43 @@ make_gif(here::here("movie_cis"))
 options_plot <- lapply(predict_data, \(pd) {
   data.frame(
     total = pd$total,
-    upper_total = pd$upper_total,
-    lower_total = pd$lower_total,
+    upper_95_total = pd$upper_95_total,
+    lower_95_total = pd$lower_95_total,
+    upper_90_total = pd$upper_90_total,
+    lower_90_total = pd$lower_90_total,
+    upper_80_total = pd$upper_80_total,
+    lower_80_total = pd$lower_80_total,
     year = pd$year
   )
 }) |> 
   dplyr::bind_rows() |>
+  tidyr::pivot_longer(dplyr::starts_with('upper'), 
+                      values_to = 'upper', 
+                      names_to = 'upper_pi',
+  ) |> 
+  tidyr::pivot_longer(dplyr::starts_with('lower'), 
+                      values_to = 'lower', 
+                      names_to = 'lower_pi',
+  ) |> 
+  dplyr::mutate(upper_pi = gsub('upper_', '', upper_pi),
+                upper_pi = gsub('_total', '', upper_pi),
+                lower_pi = gsub('lower_', '', lower_pi),
+                lower_pi = gsub('_total', '', lower_pi)) |>
   ggplot(aes(x = year)) + 
   geom_line(aes(y = total), color = 'black', alpha = 0.5) + 
-  geom_line(aes(y = upper_total), color = 'black', alpha = 0.5, linetype = 'longdash') + 
-  geom_line(aes(y = lower_total), color = 'black', alpha = 0.5, linetype = 'longdash') +
+  geom_line(aes(y = upper, color = upper_pi), linetype='longdash') +
+  geom_line(aes(y = lower, color = lower_pi),  linetype='longdash', show.legend = FALSE) +
+  scale_color_viridis_d(
+    option = "inferno", name = "Prediction Interval",
+    end = .9,
+    begin = 0.3,
+    labels = function(x) paste0(x, "%")
+  ) +
   theme_minimal() +
   ylab("AGB (Thousands Mg)") +
   xlab("Year") +
   scale_x_continuous(expand = c(0.005, 0.005), limits = c(1990, 2020), breaks = c(seq(1990, 2015, 5), 2019)) +
-  scale_y_continuous(limits = c(350, 450)) +
+  scale_y_continuous(limits = c(300, 475), breaks = seq(300, 475, 25)) +
   theme_minimal() +
   theme(
     panel.grid = element_blank(),
