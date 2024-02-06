@@ -179,14 +179,6 @@ Walters 2023, https://doi.org/10.2737/RDS-2023-0020
 Walters 2023, https://doi.org/10.2737/RDS-2023-0020
 :::
 
-##  1 metric ton of C0₂ equivalent is...
-
-![](figures/1TonneGHGsEquivilency.webp){width=55% fig-align='center'}
-
-::: footer
-Citizens for public justice, Canada - https://cpj.ca/infographic-what-is-a-tonne-of-greenhouse-gas-emissions/
-:::
-
 ## Strengthening the forest carbon sink
 
 ::: columns 
@@ -888,7 +880,6 @@ Quoted from McRoberts 2011 - https://doi.org/10.1016/j.rse.2010.10.013
 
 :::
 
-
 ## Prediction uncertainty
 
 ::: columns
@@ -938,10 +929,13 @@ Estimate by iterative bootstrapping
 Wadoux et al. 2023 - https://doi.org/10.1111/2041-210X.14106
 :::
 
+
+
 ## Uncertainty in reference data
 
 How do we get tree-level biomass?
 
+:::{.incremental}
 
 ::: columns 
 
@@ -965,6 +959,7 @@ How do we get tree-level biomass?
 
 :::
 
+:::
 
 :::
 
@@ -995,102 +990,9 @@ How do we get tree-level biomass?
 
 :::
 
-## Uncertainty in reference data
-
-- Measurement error distributions
-
-- Tree measurement errors are sampled at random
-
-
-![](figures/normal_dists_tree.png){width=100% fig-align='center'}
-
-:::footer
-Distribution parameters from Yanai et al. 2022 - https://doi.org/10.1139/cjfr-2022-0062
+::: footer
+Heath et al. 2009 - https://www.fs.usda.gov/research/treesearch/33351
 :::
-
-## Uncertainty in reference data
-
-- Measurement error distributions
-
-- Tree measurement errors are sampled at random
-
-
-![](figures/normal_dists_tree_1.png){width=100% fig-align='center'}
-
-:::footer
-Distribution parameters from Yanai et al. 2022 - https://doi.org/10.1139/cjfr-2022-0062
-:::
-
-## Uncertainty in reference data
-
-- Measurement error distributions
-
-- Tree measurement errors are sampled at random
-
-
-![](figures/normal_dists_tree_2.png){width=100% fig-align='center'}
-
-:::footer
-Distribution parameters from Yanai et al. 2022 - https://doi.org/10.1139/cjfr-2022-0062
-:::
-
-## Uncertainty in reference data
-
-Plot locations
-
-::: columns
-
-
-:::{.column width="50%"}
-
-![](figures/fia_plot_design.jpeg){width=80% fig-align='center'}
-:::
-
-::: {.column width="50%"}
-
-![](figures/normal_dists_plot.png){width=90% fig-align='center'}
-:::
-
-:::
-
-## Uncertainty in reference data
-
-Plot locations
-
-::: columns
-
-
-:::{.column width="50%"}
-
-![](figures/fia_plot_design.jpeg){width=80% fig-align='center'}
-:::
-
-::: {.column width="50%"}
-
-![](figures/normal_dists_plot_1.png){width=90% fig-align='center'}
-:::
-
-:::
-
-## Uncertainty in reference data
-
-Plot locations
-
-::: columns
-
-
-:::{.column width="50%"}
-
-![](figures/fia_plot_design.jpeg){width=80% fig-align='center'}
-:::
-
-::: {.column width="50%"}
-
-![](figures/normal_dists_plot_2.png){width=90% fig-align='center'}
-:::
-
-:::
-
 
 ## Uncertainty from a limited sample
 
@@ -1271,42 +1173,6 @@ https://analystprep.com/study-notes/cfa-level-2/quantitative-method/heteroskedas
 
 :::
 
-## Aggregation to reduce uncertainty
-
-![](figures/spat_corr.png){fig-align='center' width='100%'}
-
-:::footer
-Amaya et al. 2019 - https://doi.org/10.1016/j.strusafe.2019.101912
-:::
-
-## (Simplified) Formula for aggregate uncertainty
-
-![](figures/uncertainty_formula.png){width="100%" fig-align='center'}
-
-## Uncertainty x parcel size{.smaller}
-
-::: {.incremental}
-
-::: columns
-
-:::{.column width="30%"}
-
-- Parcel uncertainty (standard error) decreases as a function of parcel size (acres)
-
-- The range of spatial autocorrelation in our model errors is roughly 1 km
-
-- 1 km² = ~250 acres -> where uncertainty flattens out
-
-:::
-
-:::{.column width="70%"}
-![](figures/group_distributions.png){width="100%" fig-align='center'}
-:::
-
-:::
-
-:::
-
 ## Parcel summaries
 
 ![](figures/parcel_stderr.png){width=90% fig-align='center'}
@@ -1324,7 +1190,7 @@ Amaya et al. 2019 - https://doi.org/10.1016/j.strusafe.2019.101912
 <br>
 <br>
 <br>
-[~75,000 Mg]{style="color: #2db83d"}
+~75,000 Mg
 :::
 
 :::{.column width='80%'}
@@ -1342,7 +1208,7 @@ Amaya et al. 2019 - https://doi.org/10.1016/j.strusafe.2019.101912
 <br>
 <br>
 <br>
-[0 Mg]{style="color: blue"}
+0 Mg
 :::
 
 :::{.column width='80%'}
@@ -1477,23 +1343,158 @@ we are trying to track
 
 ![](figures/timeseries_combo.png){width=100% fig-align='center'}
 
+
+## Uncertainty in reference data
+
+- Measurement error distributions
+
+- Tree measurement errors are sampled at random
+
+
+![](figures/normal_dists_tree.png){width=100% fig-align='center'}
+
+:::footer
+Distribution parameters from Yanai et al. 2023 - https://doi.org/10.1139/cjfr-2022-0062
+:::
+
+## Uncertainty in reference data
+
+- Measurement error distributions
+
+- Tree measurement errors are sampled at random
+
+
+![](figures/normal_dists_tree_1.png){width=100% fig-align='center'}
+
+:::footer
+Distribution parameters from Yanai et al. 2023 - https://doi.org/10.1139/cjfr-2022-0062
+:::
+
+## Uncertainty in reference data
+
+- Measurement error distributions
+
+- Tree measurement errors are sampled at random
+
+
+![](figures/normal_dists_tree_2.png){width=100% fig-align='center'}
+
+:::footer
+Distribution parameters from Yanai et al. 2023 - https://doi.org/10.1139/cjfr-2022-0062
+:::
+
+## Uncertainty in reference data
+
+Plot locations
+
+::: columns
+
+
+:::{.column width="50%"}
+
+![](figures/fia_plot_design.jpeg){width=80% fig-align='center'}
+:::
+
+::: {.column width="50%"}
+
+![](figures/normal_dists_plot.png){width=90% fig-align='center'}
+:::
+
+:::
+
+## Uncertainty in reference data
+
+Plot locations
+
+::: columns
+
+
+:::{.column width="50%"}
+
+![](figures/fia_plot_design.jpeg){width=80% fig-align='center'}
+:::
+
+::: {.column width="50%"}
+
+![](figures/normal_dists_plot_1.png){width=90% fig-align='center'}
+:::
+
+:::
+
+## Uncertainty in reference data
+
+Plot locations
+
+::: columns
+
+
+:::{.column width="50%"}
+
+![](figures/fia_plot_design.jpeg){width=80% fig-align='center'}
+:::
+
+::: {.column width="50%"}
+
+![](figures/normal_dists_plot_2.png){width=90% fig-align='center'}
+:::
+
+:::
+
+
 ## Residual variability
 
 ![](figures/residual_variance_model.png){width=100% fig-align='center'}
+
+## Aggregation to reduce uncertainty
+
+![](figures/spat_corr.png){fig-align='center' width='100%'}
+
+:::footer
+Amaya et al. 2019 - https://doi.org/10.1016/j.strusafe.2019.101912
+:::
+
+## (Simplified) Formula for aggregate uncertainty
+
+![](figures/uncertainty_formula.png){width="100%" fig-align='center'}
 
 
 ## Semivariogram
 
 ![](figures/variograms.png){width=100% fig-align='center'}
 
+## Uncertainty x parcel size{.smaller}
+
+::: {.incremental}
+
+::: columns
+
+:::{.column width="30%"}
+
+- Parcel uncertainty (standard error) decreases as a function of parcel size (acres)
+
+- The range of spatial autocorrelation in our model errors is roughly 1 km
+
+- 1 km² = ~250 acres -> where uncertainty flattens out
+
+:::
+
+:::{.column width="70%"}
+![](figures/group_distributions.png){width="100%" fig-align='center'}
+:::
+
+:::
+
+:::
+
+## Variance components
+
+![](figures/uncertainty_contributions.png){fig-align='center' width='75%'}
+
 
 ## Parcel sample
 
 ![](figures/tax_parcel_summary.png){width=40% fig-align='center'}
 
-## Variance components
-
-![](figures/uncertainty_contributions.png){fig-align='center' width='75%'}
 
 ## Parcel characteristics -> total uncertainty
 
