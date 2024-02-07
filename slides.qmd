@@ -74,20 +74,6 @@ Griscom et al. 2017; https://www.nature.org/en-us/what-we-do/our-insights/perspe
 :::
 
 
-## Forest-based natural climate solutions
-
-As of 2015:
-
-:::{.incremental}
-- [**67 years**]{.underline} worth of fossil fuel emissions at today’s rate of combustion represent the amount of carbon stored in US forests.
-
-- [**15%**]{.underline} of annual fossil fuel emissions in the US are offset by growth and expansion of U.S. forests.
-:::
-
-::: footer
-Woodall et al. 2015 - https://doi.org/10.2737/NRS-GTR-154
-:::
-
 ## (Simplified) Forest carbon cycle
 
 
@@ -1311,6 +1297,21 @@ we are trying to track
 
 
 ::: footer
+:::
+
+
+## Forest-based natural climate solutions
+
+As of 2015:
+
+:::{.incremental}
+- [**67 years**]{.underline} worth of fossil fuel emissions at today’s rate of combustion represent the amount of carbon stored in US forests.
+
+- [**15%**]{.underline} of annual fossil fuel emissions in the US are offset by growth and expansion of U.S. forests.
+:::
+
+::: footer
+Woodall et al. 2015 - https://doi.org/10.2737/NRS-GTR-154
 :::
 
 ## LiDAR accuracy
