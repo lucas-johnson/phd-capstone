@@ -324,20 +324,6 @@ CAFRI's NY Forest Carbon Assessment - https://www.esf.edu/cafri-ny/documents/caf
 
 :::
 
-## Snapshots
-
-::: columns
-
-::: {.column width="30%"}
-- Allegany and Steuben counties
-- 2016
-:::
-
-::: {.column width="70%"}
-![](figures/as_snap.png){width=90% fig-align='center'}
-:::
-
-:::
 
 ## Snapshots
 
@@ -1257,7 +1243,9 @@ we are trying to track
 
 - Snapshots of forest biomass stocks with aerial LiDAR point clouds
 
-- Historical mapping and continued monitoring of forest biomass stocks and stock changes with Landsat imagery
+- Historical mapping of forest biomass stocks and stock changes with Landsat imagery
+  - A basis for monitoring
+  - Extensible to other regions
 
 - Propagating uncertainty through our modeling pipeline
 
