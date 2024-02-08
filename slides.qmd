@@ -563,25 +563,6 @@ Cartoon CC-BY 4.0 Allison Horst
 
 ## {background-image="figures/agb_mov_loss.png" background-size="70% auto" background-position="50% 50%"}
 
-## Management records{.smaller}
-
-::: columns
-
-:::{.column width="15%"}
-
-They match!
-
-  - Timing
-  - Severity
-  - Recovery
-  
-:::
-
-::: {.column width="85%"}
-![](figures/horizontal_multi_harvest.jpg){width='100%' fig-align='right'}
-:::
-
-:::
 
 ## Stock changes {.smaller background-image="figures/nys_agb_diff.png" background-size="50% auto" background-position="80% 50%"}
 
@@ -1327,6 +1308,26 @@ Woodall et al. 2015 - https://doi.org/10.2737/NRS-GTR-154
 
 ![](figures/landsat_methods_acc_combo.png){fig-align='center' width=80%}
 
+
+## Management records{.smaller}
+
+::: columns
+
+:::{.column width="15%"}
+
+They match!
+
+  - Timing
+  - Severity
+  - Recovery
+  
+:::
+
+::: {.column width="85%"}
+![](figures/horizontal_multi_harvest.jpg){width='100%' fig-align='right'}
+:::
+
+:::
 
 ## Trends
 
