@@ -602,24 +602,85 @@
 </div>
 </div>
 </section>
-<section id="lidar-models" class="slide level2 center">
+<section id="lidar-models" class="slide level2 smaller center">
 <h2>LiDAR models</h2>
+<div>
 <div class="columns">
 <div class="column" style="width:45%;">
 <ul>
-<li><p>LiDAR point clouds clipped to FIA plots</p></li>
-<li><p>Point cloud metrics summarized</p></li>
-<li><p>ML ensembles</p></li>
+<li class="fragment"><p>LiDAR point clouds clipped to FIA plots</p>
+<ul>
+<li class="fragment">Used ‘bracketing’ inventories to temporally harmonize FIA and LiDAR</li>
+<li class="fragment">Point cloud metrics summarized</li>
+<li class="fragment">Topographic and climatic data</li>
+</ul></li>
+<li class="fragment"><p>ML ensembles</p>
+<ul>
+<li class="fragment">Random forest</li>
+<li class="fragment">Gradient boosting machines</li>
+<li class="fragment">Support vector machines</li>
+</ul></li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/fia_plot_design.jpeg" style="width:40.0%"></p>
-</figure>
-</div>
 </div><div class="column" style="width:55%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="figures/las_3d_and_chm.png" style="width:40.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="lidar-models-1" class="slide level2 smaller center">
+<h2>LiDAR models</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<ul>
+<li><p>LiDAR point clouds clipped to FIA plots</p>
+<ul>
+<li>Used ‘bracketing’ inventories to temporally harmonize FIA and LiDAR</li>
+<li>Point cloud metrics summarized</li>
+<li>Topographic and climatic data</li>
+</ul></li>
+<li><p>ML ensembles</p>
+<ul>
+<li>Random forest</li>
+<li>Gradient boosting machines</li>
+<li>Support vector machines</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:55%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/lidar_linmod_test_scatter.png" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="lidar-models-2" class="slide level2 smaller center">
+<h2>LiDAR models</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<ul>
+<li><p>LiDAR point clouds clipped to FIA plots</p>
+<ul>
+<li>Used ‘bracketing’ inventories to temporally harmonize FIA and LiDAR</li>
+<li>Point cloud metrics summarized</li>
+<li>Topographic and climatic data</li>
+</ul></li>
+<li><p>ML ensembles</p>
+<ul>
+<li>Random forest</li>
+<li>Gradient boosting machines</li>
+<li>Support vector machines</li>
+</ul></li>
+<li><p>LiDAR point clouds -&gt; gridded predictors for mapping</p></li>
+</ul>
+</div><div class="column" style="width:55%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/lidar_linmod_test_scatter.png" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -695,6 +756,17 @@
 </ul>
 </div>
 </section>
+<section id="section-3" class="slide level2 center">
+<h2></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/lidar_pub.png" style="width:100.0%"></p>
+</figure>
+</div>
+<div class="footer">
+<p>https://doi.org/10.1016/j.jag.2022.103059</p>
+</div>
+</section>
 <section id="stock-change-methods-and-carbon-accounting" class="slide level2 center">
 <h2>Stock-change methods and carbon accounting</h2>
 <div>
@@ -703,8 +775,11 @@
 <ul>
 <li class="fragment"><p>Need repeated measurements / estimates / inventories</p></li>
 <li class="fragment"><p>Differences between time 1 and time 2</p></li>
+<li class="fragment"><p>Net fluxes</p>
+<ul>
 <li class="fragment"><p>Positive differences (growth) = removals from the atmosphere</p></li>
 <li class="fragment"><p>Negative differences (disturbance) = emissions to the atmosphere</p></li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
@@ -782,12 +857,15 @@
 </section>
 <section id="landsat-models---direct" class="slide level2 center">
 <h2>Landsat models - Direct</h2>
+<div>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
-<li><p>Training models with sample of FIA plots in NYS</p></li>
-<li><p>A few thousand elligble plots</p></li>
-<li><p>More accurate</p></li>
+<li class="fragment"><p>ML ensembles</p></li>
+<li class="fragment"><p>Training models with sample of FIA plots in NYS</p></li>
+<li class="fragment"><p>A few thousand eligible plots</p></li>
+<li class="fragment"><p>Landtrendr to temporally smooth, segment, and gap-fill Landsat spectral indices</p></li>
+<li class="fragment"><p>More accurate</p></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
@@ -797,21 +875,67 @@
 </div>
 </div>
 </div>
+</div>
+</section>
+<section id="landsat-models---direct-1" class="slide level2 center">
+<h2>Landsat models - Direct</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>ML ensembles</p></li>
+<li><p>Training models with sample of FIA plots in NYS</p></li>
+<li><p>A few thousand eligible plots</p></li>
+<li><p>Landtrendr to temporally smooth, segment, and gap-fill Landsat spectral indices</p></li>
+<li><p>More accurate</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/direct_test.png" style="width:85.0%"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="landsat-models---indirect" class="slide level2 center">
+<h2>Landsat models - Indirect</h2>
+<div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li class="fragment"><p>ML ensembles</p></li>
+<li class="fragment"><p>Training models with LiDAR-AGB predictions</p></li>
+<li class="fragment"><p>20k pixels sampled</p></li>
+<li class="fragment"><p>Landtrendr to temporally smooth, segment, and gap-fill Landsat spectral indices</p></li>
+<li class="fragment"><p>Improved saturation point</p></li>
+<li class="fragment"><p>Increased spatial heterogeneity</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/las_landsat.png" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="landsat-models---indirect-1" class="slide level2 center">
 <h2>Landsat models - Indirect</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
+<li><p>ML ensembles</p></li>
 <li><p>Training models with LiDAR-AGB predictions</p></li>
 <li><p>20k pixels sampled</p></li>
+<li><p>Landtrendr to temporally smooth, segment, and gap-fill Landsat spectral indices</p></li>
 <li><p>Improved saturation point</p></li>
 <li><p>Increased spatial heterogeneity</p></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/las_landsat.png" style="width:70.0%"></p>
+<p><img data-src="figures/indirect_test.png" style="width:85.0%"></p>
 </figure>
 </div>
 </div>
@@ -902,13 +1026,13 @@
 </figure>
 </div>
 </section>
-<section id="section-3" class="slide level2 center" data-background-image="movie/agb.gif" data-background-size="85% auto" data-background-position="50% 50%">
+<section id="section-4" class="slide level2 center" data-background-image="movie/agb.gif" data-background-size="85% auto" data-background-position="50% 50%">
 <h2></h2>
 </section>
-<section id="section-4" class="slide level2 center" data-background-image="figures/agb_mov_grow.png" data-background-size="70% auto" data-background-position="50% 50%">
+<section id="section-5" class="slide level2 center" data-background-image="figures/agb_mov_grow.png" data-background-size="70% auto" data-background-position="50% 50%">
 <h2></h2>
 </section>
-<section id="section-5" class="slide level2 center" data-background-image="figures/agb_mov_loss.png" data-background-size="70% auto" data-background-position="50% 50%">
+<section id="section-6" class="slide level2 center" data-background-image="figures/agb_mov_loss.png" data-background-size="70% auto" data-background-position="50% 50%">
 <h2></h2>
 </section>
 <section id="stock-changes" class="slide level2 smaller center" data-background-image="figures/nys_agb_diff.png" data-background-size="50% auto" data-background-position="80% 50%">
@@ -960,10 +1084,18 @@
 </div>
 </div>
 </section>
-<section id="pretty-pictures-or-scientific-inference" class="slide level2 center">
-<h2>Pretty pictures, or scientific inference?</h2>
+<section id="section-7" class="slide level2 center">
+<h2></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/landsat_pub.png" style="width:100.0%"></p>
+</figure>
+</div>
+<div class="footer">
+<p>https://doi.org/10.1016/j.foreco.2023.121348</p>
+</div>
 </section>
-<section id="pretty-pictures-or-scientific-inference-1" class="slide level2 smaller center">
+<section id="pretty-pictures-or-scientific-inference" class="slide level2 smaller center">
 <h2>Pretty pictures, or scientific inference?</h2>
 <div>
 <div class="columns">
@@ -1005,7 +1137,7 @@
 </div><div class="column" style="width:70%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="figures/lcmap_x_plots_2019.png" style="width:75.0%"></p>
+<p><img data-src="figures/lcmap_x_plots20_2019.png" style="width:75.0%"></p>
 </figure>
 </div>
 </div>
@@ -1416,9 +1548,11 @@
 <h2>Pixel uncertainty</h2>
 <p><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p>
 </section>
-<section id="aggregation-to-reduce-uncertainty" class="slide level2 center">
+<section id="aggregation-to-reduce-uncertainty" class="slide level2 smaller center">
 <h2>Aggregation to reduce uncertainty</h2>
 <div>
+<div class="columns">
+<div class="column" style="width:30%;">
 <ul>
 <li class="fragment"><p>Individual pixel predictions are highly variable</p></li>
 <li class="fragment"><p>Pixels are not ecologically or practically meaningful</p></li>
@@ -1426,6 +1560,60 @@
 <li class="fragment"><p>Pixel-level errors may cancel out</p></li>
 <li class="fragment"><p>The degree to which they cancel out depends on spatial correlation</p></li>
 </ul>
+</div><div class="column" style="width:70%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/group_distributions.png" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="aggregation-to-reduce-uncertainty-1" class="slide level2 smaller center">
+<h2>Aggregation to reduce uncertainty</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<ul>
+<li><p>Individual pixel predictions are highly variable</p></li>
+<li><p>Pixels are not ecologically or practically meaningful</p></li>
+<li><p>Aggregating smooths out variation</p></li>
+<li><p>Pixel-level errors may cancel out</p></li>
+<li><p>The degree to which they cancel out depends on spatial correlation</p></li>
+</ul>
+</div><div class="column" style="width:70%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/uncertainty_contributions.png" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="simple-models-to-expedite-this-process" class="slide level2 center">
+<h2>Simple models to expedite this process</h2>
+<div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li class="fragment"><p>Parcel characteristics can predict parcel-level uncertainty</p></li>
+<li class="fragment"><p>Log-log regression with:</p>
+<ul>
+<li class="fragment"><p>Area</p></li>
+<li class="fragment"><p>Perimeter</p></li>
+<li class="fragment"><p>Forest cover</p></li>
+<li class="fragment"><p>AGB density</p></li>
+</ul></li>
+<li class="fragment"><p>Efficient uncertainty estimation</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/total_sd_accuracy.png" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="parcel-summaries-1" class="slide level2 center">
@@ -1436,7 +1624,7 @@
 </figure>
 </div>
 </section>
-<section id="section-6" class="slide level2 center" data-background-image="movie_cis/agb.gif" data-background-size="85% auto" data-background-position="50% 50%">
+<section id="section-8" class="slide level2 center" data-background-image="movie_cis/agb.gif" data-background-size="85% auto" data-background-position="50% 50%">
 <h2></h2>
 </section>
 <section id="a-range-of-outcomes---max-growth" class="slide level2 center">
@@ -1595,7 +1783,7 @@
 </div>
 </div>
 </section>
-<section id="section-7" class="slide level2 center" data-background-image="figures/hwf_methods_compare.png" data-background-position="50%" data-background-size="60% auto">
+<section id="section-9" class="slide level2 center" data-background-image="figures/hwf_methods_compare.png" data-background-position="50%" data-background-size="60% auto">
 <h2></h2>
 </section>
 <section id="landsat-accuracy" class="slide level2 center">
@@ -1743,7 +1931,7 @@
 </figure>
 </div>
 </section>
-<section id="aggregation-to-reduce-uncertainty-1" class="slide level2 center">
+<section id="aggregation-to-reduce-uncertainty-2" class="slide level2 center">
 <h2>Aggregation to reduce uncertainty</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -1767,34 +1955,6 @@
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="figures/variograms.png" style="width:100.0%"></p>
-</figure>
-</div>
-</section>
-<section id="uncertainty-x-parcel-size" class="slide level2 smaller center">
-<h2>Uncertainty x parcel size</h2>
-<div>
-<div class="columns">
-<div class="column" style="width:30%;">
-<ul>
-<li class="fragment"><p>Parcel uncertainty (standard error) decreases as a function of parcel size (acres)</p></li>
-<li class="fragment"><p>The range of spatial autocorrelation in our model errors is roughly 1 km</p></li>
-<li class="fragment"><p>1 km² = ~250 acres -&gt; where uncertainty flattens out</p></li>
-</ul>
-</div><div class="column" style="width:70%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/group_distributions.png" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="variance-components" class="slide level2 center">
-<h2>Variance components</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figures/uncertainty_contributions.png" style="width:75.0%"></p>
 </figure>
 </div>
 </section>
