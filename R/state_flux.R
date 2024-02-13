@@ -16,7 +16,7 @@ state_flux <- ggplot(data |> dplyr::filter(Net.Flux.Unit == 'MMT CO2 Eq.')) +
                      breaks = seq(1990, 2025, 5)) +
   scale_y_continuous(expand = c(0.005, 0.005),
                      limits = c(-28, -22)) +
-  ylab(bquote('MMT'~CO[2]~'Eq.'~year^-1*'')) +
+  ylab(bquote('MMT'~CO[2]~'Eq.')) +
   xlab('Year') +
   ggtitle("Annual Total Forest Carbon Flux - NYS") +
   theme_minimal() +

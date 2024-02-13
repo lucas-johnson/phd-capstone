@@ -35,10 +35,8 @@ format:
 
 :::{.incremental}
 - [**"More likely than not"**]{.underline} that we will reach the 1.5° C threshold by 2040
-- Very low emissions scenario: [**1.4° C**]{.underline} 
-- Intermediate emission scenario: [**2.7° C**]{.underline}
-- High emission scenario: [**4.4° C**]{.underline}
-- Most successful pathways rely on CO₂ removal technology (CDR)
+
+- In addition to drastic emissions reductions - most successful pathways rely on CO₂ removal technology (CDR)
 :::
 
 ::: footer
@@ -74,43 +72,36 @@ Griscom et al. 2017; https://www.nature.org/en-us/what-we-do/our-insights/perspe
 :::
 
 
-## (Simplified) Forest carbon cycle
+## {background-image="figures/cycle.jpeg" background-size="65% auto" background-position="50% 50%"}
 
+:::footer
+:::
 
-![](figures/cycle.jpeg){width=60% fig-align='center'}
-
-
-## New York State and the CLCPA
-
-![](figures/clcpa_clean.jpeg){width=50% fig-align='center'}
-
+## {background-image="figures/clcpa_clean.jpeg" background-size="45% auto" background-position="50% 0%"}
 
 ::: footer
 CLCPA diagram https://wendelcompanies.com/ny-clcpa-draft-plan/
 :::
 
 
-## New York State and the CLCPA
+## {background-image="figures/clcpa.png" background-size="60% auto" background-position="69% 0%"}
 
-![](figures/clcpa.png){width=60% fig-align='center'}
 
 ::: footer
 CLCPA diagram https://wendelcompanies.com/ny-clcpa-draft-plan/
 :::
 
+## {background-image="figures/lcmap_2019.png" background-size="55% auto" background-position="50% 0%"}
 
-## Forests dominate the NYS landscape
-
-
-![](figures/lcmap_2019.png){width=55% fig-align='center'}
-
+::: footer
+:::
 
 ## What role will forests play in net-zero efforts?
 
 ## USFS Forest Inventory and Analysis Program
 
 ::: columns
-::: {.column width="45%"}
+::: {.column width="35%"}
 ![](figures/fia_plot_design.jpeg){width=100% fig-align='center'}
 :::
 
@@ -118,7 +109,7 @@ CLCPA diagram https://wendelcompanies.com/ny-clcpa-draft-plan/
 :::
 
 
-::: {.column width="45%"}
+::: {.column width="55%"}
 ![](figures/lcmap_x_plots_2019.png){width=100% fig-align='center'}
 
 :::
@@ -200,13 +191,19 @@ CAFRI's NY Forest Carbon Assessment - https://www.esf.edu/cafri-ny/documents/caf
 
 ::: {.incremental}
 
-- Identify stocks that should be protected
+- Provide information at scales relevant to decision-making and management
+  
+  - Individual forests, stands, and ownership parcels
+  
+- NYS can use this data to:
 
-- Prioritize areas for management
+  - Identify stocks that should be protected
 
-- Quantify policy and management outcomes
+  - Prioritize areas for management
 
-- Identify spatiotemporal patterns and drivers of change
+  - Quantify management outcomes
+
+  - More precisely identify spatiotemporal patterns and drivers of change
 
 :::
 
@@ -215,17 +212,125 @@ CAFRI's NY Forest Carbon Assessment - https://www.esf.edu/cafri-ny/documents/caf
 
 ::: {.incremental}
 
+::: columns
+
+:::{.column width='40%'}
+
 - Mapping forest biomass stocks with aerial LiDAR point clouds
 
-- Modeling historical forest biomass stocks and stock changes with Landsat imagery
-  - Provides a basis for monitoring
+- Mapping historical forest biomass stocks and stock-changes with Landsat imagery
 
-- Propagating uncertainty through our modeling pipeline
+- Uncertainty estimation for arbitrary map sub-regions
+
 :::
 
-## The power of LiDAR
+:::{.column width='60%'}
 
-![](figures/lidar_3d.png){width=90% fig-align='center'}
+:::
+
+:::
+
+:::
+
+## My work
+
+
+::: columns
+
+:::{.column width='40%'}
+
+- [Mapping forest biomass stocks with aerial LiDAR point clouds]{.underline}
+
+- [Mapping historical forest biomass stocks and stock-changes with Landsat imagery]{style="opacity:.4"}
+
+- [Uncertainty estimation for arbitrary map sub-regions]{style="opacity:.4"}
+
+:::
+
+:::{.column width='60%'}
+![](figures/lidar_pub.png){fig-align='center'}
+:::
+
+:::
+
+::: footer
+https://doi.org/10.1016/j.jag.2022.103059
+:::
+
+## My work
+
+::: columns
+
+:::{.column width='40%'}
+
+- [Mapping forest biomass stocks with aerial LiDAR point clouds]{style="opacity:.4"}
+
+- [Mapping historical forest biomass stocks and stock-changes with Landsat imagery]{.underline}
+
+- [Uncertainty estimation for arbitrary map sub-regions]{style="opacity:.4"}
+
+:::
+
+:::{.column width='60%'}
+![](figures/landsat_pub.png){fig-align='center'}
+:::
+
+:::
+
+::: footer
+https://doi.org/10.1016/j.foreco.2023.121348
+:::
+
+## My work
+
+::: columns
+
+:::{.column width='40%'}
+
+- [Mapping forest biomass stocks with aerial LiDAR point clouds]{style="opacity:.4"}
+
+- [Mapping historical forest biomass stocks and stock-changes with Landsat imagery]{style="opacity:.4"}
+
+- [Uncertainty estimation for arbitrary map sub-regions]{.underline}
+
+:::
+
+:::{.column width='60%'}
+![](figures/unpub.png){fig-align='center'}
+:::
+
+:::
+
+
+## Roadmap
+
+::: columns
+
+:::{.column width='40%'}
+
+- [Mapping forest biomass stocks with aerial LiDAR point clouds]{.underline}
+
+- [Mapping historical forest biomass stocks and stock-changes with Landsat imagery]{style="opacity:.4"}
+
+- [Uncertainty estimation for arbitrary map sub-regions]{style="opacity:.4"}
+
+:::
+
+:::{.column width='60%'}
+![](figures/lidar_pub.png){fig-align='center'}
+:::
+
+:::
+
+::: footer
+https://doi.org/10.1016/j.jag.2022.103059
+:::
+
+## {background-image="figures/lidar_3d.png" background-size="90% auto" background-position="50% 20%"}
+
+::: footer
+
+:::
 
 ## The power of LiDAR
 
@@ -286,7 +391,7 @@ CAFRI's NY Forest Carbon Assessment - https://www.esf.edu/cafri-ny/documents/caf
   - Point cloud metrics summarized
   - Topographic and climatic data 
 
-- ML ensembles
+- Machine learning ensembles
   - Random forest
   - Gradient boosting machines
   - Support vector machines
@@ -315,7 +420,7 @@ CAFRI's NY Forest Carbon Assessment - https://www.esf.edu/cafri-ny/documents/caf
   - Point cloud metrics summarized
   - Topographic and climatic data 
 
-- ML ensembles
+- Machine learning ensembles
   - Random forest
   - Gradient boosting machines
   - Support vector machines
@@ -323,7 +428,7 @@ CAFRI's NY Forest Carbon Assessment - https://www.esf.edu/cafri-ny/documents/caf
 :::
 
 ::: {.column width="55%"}
-![](figures/lidar_linmod_test_scatter.png){width=100% fig-align='center'}
+![](figures/lidar_linmod_test_scatter_legend.png){width=100% fig-align='center'}
 :::
 
 :::
@@ -341,7 +446,7 @@ CAFRI's NY Forest Carbon Assessment - https://www.esf.edu/cafri-ny/documents/caf
   - Point cloud metrics summarized
   - Topographic and climatic data 
 
-- ML ensembles
+- Machine learning ensembles
   - Random forest
   - Gradient boosting machines
   - Support vector machines
@@ -350,7 +455,7 @@ CAFRI's NY Forest Carbon Assessment - https://www.esf.edu/cafri-ny/documents/caf
 :::
 
 ::: {.column width="55%"}
-![](figures/lidar_linmod_test_scatter.png){width=100% fig-align='center'}
+![](figures/lidar_linmod_test_scatter_legend.png){width=100% fig-align='center'}
 :::
 
 :::
@@ -417,12 +522,29 @@ CAFRI's NY Forest Carbon Assessment - https://www.esf.edu/cafri-ny/documents/caf
 
 :::
 
-## 
 
-![](figures/lidar_pub.png){width='100%' fig-align='center'}
+## Roadmap
+
+::: columns
+
+:::{.column width='40%'}
+
+- [Mapping forest biomass stocks with aerial LiDAR point clouds]{style="opacity:.4"}
+
+- [Mapping historical forest biomass stocks and stock-changes with Landsat imagery]{.underline}
+
+- [Uncertainty estimation for arbitrary map sub-regions]{style="opacity:.4"}
+
+:::
+
+:::{.column width='60%'}
+![](figures/landsat_pub.png){fig-align='center'}
+:::
+
+:::
 
 ::: footer
-https://doi.org/10.1016/j.jag.2022.103059
+https://doi.org/10.1016/j.foreco.2023.121348
 :::
 
 ## Stock-change methods and carbon accounting
@@ -506,23 +628,46 @@ USGS - https://www.usgs.gov/media/images/landsat-missions-timeline
 OSU eMapR group - https://emapr.github.io/LT-GEE/landtrendr.html
 :::
 
+
 ## Landsat models 
 
 ::: columns
 
 ::: {.column width=50%}
-Direct 
+Direct
 
-![](figures/fia_landsat.png){fig-align='center' width=70%}
+![](figures/direct_funnel.png){fig-align='center' width=50%}
+:::
+
+::: {.column width=50%}
+
+:::
+
+:::
+
+::: footer
+:::
+
+## Landsat models 
+
+::: columns
+
+::: {.column width=50%}
+Direct
+
+![](figures/direct_funnel.png){fig-align='center' width=50%}
 :::
 
 ::: {.column width=50%}
 
 Indirect
 
-![](figures/las_landsat.png){fig-align='center' width=70%}
+![](figures/indirect_funnel.png){fig-align='center' width=50%}
 :::
 
+:::
+
+::: footer
 :::
 
 ## Landsat models - Direct
@@ -542,12 +687,12 @@ Indirect
 
 - Landtrendr to temporally smooth, segment, and gap-fill Landsat spectral indices
 
-- More accurate
+- More accurate relative to the indirect approach
 :::
 
 ::: {.column width=50%}
 
-![](figures/fia_landsat.png){fig-align='center' width=70%}
+![](figures/direct_funnel.png){fig-align='center' width=55%}
 :::
 
 :::
@@ -570,7 +715,7 @@ Indirect
 
 - Landtrendr to temporally smooth, segment, and gap-fill Landsat spectral indices
 
-- More accurate
+- More accurate relative to the indirect approach
 :::
 
 ::: {.column width=50%}
@@ -605,7 +750,7 @@ Indirect
 
 ::: {.column width=50%}
 
-![](figures/las_landsat.png){fig-align='center' width=70%}
+![](figures/indirect_funnel.png){fig-align='center' width=55%}
 :::
 
 :::
@@ -656,8 +801,36 @@ Indirect
 
 ::: {.column width="50%"}
 
-![](figures/model_averaging.jpeg){width=100% fig-align='center'}
+![](figures/ensemble_funnels.png){width=100% fig-align='center'}
 
+:::
+
+:::
+
+:::footer
+:::
+
+
+## Landsat models - Ensemble
+
+::: columns
+
+::: {.column width="50%"}
+- Averaging predictions from direct and indirect models
+
+- Combining the strengths from each individual approach
+
+- Best of both worlds 
+:::
+
+::: {.column width="50%"}
+![](figures/model_averaging.jpeg){width=100% fig-align='center'}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 :::
 
 :::
@@ -666,36 +839,36 @@ Indirect
 Cartoon CC-BY 4.0 Allison Horst
 :::
 
-## Comparison at Huntington Wildlife Forest
+## LiDAR vs Landsat at Huntington Wildlife Forest
 
 ![](figures/hwf_inset.png){width=55% fig-align='center'}
 
+## {background-image="figures/hwf_agb_x_chm.png" background-size="100% auto" background-position="50% 50%"}
 
-## Landsat vs LiDAR
+::: footer
+:::
 
-![](figures/hwf_agb_x_chm.png){width=100% fig-align='center'}
+## {background-image="figures/hwf_agb_x_chm_tall.png" background-size="100% auto" background-position="50% 50%"}
+
+::: footer
+:::
 
 
-## Landsat vs LiDAR
+## {background-image="figures/hwf_agb_x_chm_hpeak.png" background-size="100% auto" background-position="50% 50%"}
 
-![](figures/hwf_agb_x_chm_tall.png){width=100% fig-align='center'}
+::: footer
+:::
 
 
-## Landsat vs LiDAR
+## {background-image="figures/hwf_agb_x_chm.png" background-size="100% auto" background-position="50% 50%"}
 
-![](figures/hwf_agb_x_chm_hpeak.png){width=100% fig-align='center'}
+::: footer
+:::
 
-## Landsat vs LiDAR
+## {background-image="figures/expand_time_stack.png" background-size="60% auto" background-position="50% 50%"}
 
-![](figures/hwf_agb_x_chm_border.png){width=100% fig-align='center'}
-
-## Landsat vs LiDAR
-
-![](figures/hwf_agb_x_chm.png){width=100% fig-align='center'}
-
-## Landsat vs LiDAR
-
-![](figures/expand_time_stack.png){width=60% fig-align='center'}
+::: footer
+:::
 
 ## Zooming in to a working forest...
 
@@ -703,12 +876,28 @@ Cartoon CC-BY 4.0 Allison Horst
 
 ## {background-image="movie/agb.gif" background-size="85% auto" background-position="50% 50%"}
 
-## {background-image="figures/agb_mov_grow.png" background-size="70% auto" background-position="50% 50%"}
+## Management records{.smaller}
 
-## {background-image="figures/agb_mov_loss.png" background-size="70% auto" background-position="50% 50%"}
+::: columns
+
+:::{.column width="15%"}
+
+They match!
+
+  - Timing
+  - Severity
+  - Recovery
+  
+:::
+
+::: {.column width="85%"}
+![](figures/horizontal_multi_harvest.jpg){width='100%' fig-align='right'}
+:::
+
+:::
 
 
-## Stock changes {.smaller background-image="figures/nys_agb_diff.png" background-size="50% auto" background-position="80% 50%"}
+## Stock-changes {.smaller background-image="figures/nys_agb_diff.png" background-size="50% auto" background-position="80% 50%"}
 
 ::: columns
 
@@ -724,9 +913,9 @@ Cartoon CC-BY 4.0 Allison Horst
 
 :::
 
-## Parcel summaries
-
-![](figures/parcel_sumamries.png){width=80% fig-align='center'}
+## {background-image="figures/parcel_sumamries.png" background-size="80% auto" background-position="50% 50%"}
+::: footer
+:::
 
 ## Upshot of statewide Landsat-AGB time series
 
@@ -755,7 +944,6 @@ Cons
 - Spectral information is limited
   
   - Saturation
-  - Defoliation events
   - Green-up before grow-up
 
 :::
@@ -764,14 +952,25 @@ Cons
 
 :::
 
-## 
+## Roadmap
 
-![](figures/landsat_pub.png){width='100%' fig-align='center'}
+::: columns
 
-::: footer
-https://doi.org/10.1016/j.foreco.2023.121348
+:::{.column width='40%'}
+
+- [Mapping forest biomass stocks with aerial LiDAR point clouds]{style="opacity:.4"}
+
+- [Mapping historical forest biomass stocks and stock-changes with Landsat imagery]{style="opacity:.4"}
+
+- [Uncertainty estimation for arbitrary map sub-regions]{.underline}
+
 :::
 
+:::{.column width='60%'}
+![](figures/unpub.png){fig-align='center'}
+:::
+
+:::
 
 ## Pretty pictures, or scientific inference?{.smaller}
 
@@ -796,7 +995,7 @@ https://doi.org/10.1016/j.foreco.2023.121348
   
   - How precise are our predictions?
   
-  - Describes arbitrary sub-regions of our maps
+  - Describes arbitrary map sub-regions
   
 :::
 
@@ -864,10 +1063,13 @@ Quoted from McRoberts 2011 - https://doi.org/10.1016/j.rse.2010.10.013
 
 ::: {.column width="60%"}
 
-![](figures/model_funnels.png){width=55% fig-align='center'}
+![](figures/ensemble_funnels.png){width=85% fig-align='center'}
 
 :::
 
+:::
+
+::: footer
 :::
 
 ## Prediction uncertainty
@@ -882,10 +1084,13 @@ Quoted from McRoberts 2011 - https://doi.org/10.1016/j.rse.2010.10.013
 
 ::: {.column width="60%"}
 
-![](figures/model_funnels_fia.png){width=55% fig-align='center'}
+![](figures/ensemble_funnels_fia.png){width=85% fig-align='center'}
 
 :::
 
+:::
+
+::: footer
 :::
 
 ## Prediction uncertainty
@@ -902,10 +1107,13 @@ Quoted from McRoberts 2011 - https://doi.org/10.1016/j.rse.2010.10.013
 
 ::: {.column width="60%"}
 
-![](figures/model_funnels_lidar.png){width=55% fig-align='center'}
+![](figures/ensemble_funnels_lidar.png){width=85% fig-align='center'}
 
 :::
 
+:::
+
+::: footer
 :::
 
 ## Prediction uncertainty
@@ -924,10 +1132,13 @@ Quoted from McRoberts 2011 - https://doi.org/10.1016/j.rse.2010.10.013
 
 ::: {.column width="60%"}
 
-![](figures/model_funnels_landsat.png){width=55% fig-align='center'}
+![](figures/ensemble_funnels_landsat.png){width=85% fig-align='center'}
 
 :::
 
+:::
+
+::: footer
 :::
 
 
@@ -950,10 +1161,13 @@ Quoted from McRoberts 2011 - https://doi.org/10.1016/j.rse.2010.10.013
 
 ::: {.column width="60%"}
 
-![](figures/model_funnels.png){width=55% fig-align='center'}
+![](figures/ensemble_funnels.png){width=85% fig-align='center'}
 
 :::
 
+:::
+
+::: footer
 :::
 
 ## Prediction uncertainty
@@ -977,10 +1191,13 @@ Quoted from McRoberts 2011 - https://doi.org/10.1016/j.rse.2010.10.013
 
 ::: {.column width="60%"}
 
-![](figures/model_funnels_first.png){width=55% fig-align='center'}
+![](figures/direct_funnel.png){width=45% fig-align='center'}
 
 :::
 
+:::
+
+::: footer
 :::
 
 ## Prediction uncertainty
@@ -1058,7 +1275,7 @@ How do we get tree-level biomass?
 
 ::: {.column width="70%"}
 
-![](figures/model_funnels_ref.png){width=40% fig-align='center'}
+![](figures/direct_funnel_ref.png){width=40% fig-align='center'}
 
 :::
 
@@ -1281,7 +1498,9 @@ https://analystprep.com/study-notes/cfa-level-2/quantitative-method/heteroskedas
 :::
 
 :::{.column width='70%'}
-![](figures/group_distributions.png){width="100%" fig-align='center'}
+<br>
+<br>
+![](figures/parcel_viz_3_allvar.png){width="100%" fig-align='center'}
 :::
 
 :::
@@ -1308,13 +1527,27 @@ https://analystprep.com/study-notes/cfa-level-2/quantitative-method/heteroskedas
 :::
 
 :::{.column width='70%'}
-![](figures/uncertainty_contributions.png){fig-align='center' width='100%'}
+<br>
+![](figures/spat_corr.png){width="100%" fig-align='center'}
 :::
 
 :::
 
+:::footer
+Amaya et al. 2019 - https://doi.org/10.1016/j.strusafe.2019.101912
+:::
 
-## Simple models to expedite this process
+## {background-image="figures/group_distributions.png" background-size="70% auto" background-position="50% 50%"}
+
+::: footer
+:::
+
+## {background-image="figures/uncertainty_contributions.png" background-size="70% auto" background-position="50% 50%"}
+
+::: footer
+:::
+
+## Expediting the uncertainty estimation process
 
 :::{.incremental}
 
@@ -1339,18 +1572,46 @@ https://analystprep.com/study-notes/cfa-level-2/quantitative-method/heteroskedas
 :::
 
 :::{.column width='50%'}
+<br>
+:::
 
+:::
+
+:::
+
+## Expediting the uncertainty estimation process
+
+
+::: columns
+
+:::{.column width='50%'}
+
+- Parcel characteristics describe parcel-level uncertainty
+
+- Log-log regression with:
+
+  - Area 
+
+  - Perimeter
+
+  - Forest cover
+
+  - AGB density 
+
+- Efficient uncertainty estimation
+
+:::
+
+:::{.column width='50%'}
 ![](figures/total_sd_accuracy.png){width='100%' fig-align='center'}
-
 :::
 
 :::
 
-:::
 
-## Parcel summaries
 
-![](figures/parcel_stderr.png){width=90% fig-align='center'}
+
+## {background-image="figures/parcel_stderr.png" background-size="80% auto" background-position="50% 50%"}
 
 
 ## {background-image="movie_cis/agb.gif" background-size="85% auto" background-position="50% 50%"}
@@ -1403,9 +1664,9 @@ https://analystprep.com/study-notes/cfa-level-2/quantitative-method/heteroskedas
 
 - We overpredict the least AGB dense stands
 
-- Our recovery is too fast
+- Our predicted recovery rates are often too fast
 
-- In general: the magnitude of uncertainty is greater than the magnitude of the changes
+- The magnitude of uncertainty is greater than the magnitude of the changes
 we are trying to track
 :::
 
@@ -1444,13 +1705,11 @@ we are trying to track
 
 :::{.incremental}
 
-- Snapshots of forest biomass stocks with aerial LiDAR point clouds
+- Mapping forest biomass stocks with aerial LiDAR point clouds
 
-- Historical mapping of forest biomass stocks and stock changes with Landsat imagery
-  - A basis for monitoring
-  - Extensible to other regions
+- Mapping historical forest biomass stocks and changes with Landsat imagery
 
-- Propagating uncertainty through our modeling pipeline
+- Uncertainty estimation for arbitrary map sub-regions
 
 :::
 
@@ -1530,26 +1789,6 @@ Woodall et al. 2015 - https://doi.org/10.2737/NRS-GTR-154
 
 ![](figures/landsat_methods_acc_combo.png){fig-align='center' width=80%}
 
-
-## Management records{.smaller}
-
-::: columns
-
-:::{.column width="15%"}
-
-They match!
-
-  - Timing
-  - Severity
-  - Recovery
-  
-:::
-
-::: {.column width="85%"}
-![](figures/horizontal_multi_harvest.jpg){width='100%' fig-align='right'}
-:::
-
-:::
 
 ## Trends
 
@@ -1657,13 +1896,6 @@ Plot locations
 
 ![](figures/residual_variance_model.png){width=100% fig-align='center'}
 
-## Aggregation to reduce uncertainty
-
-![](figures/spat_corr.png){fig-align='center' width='100%'}
-
-:::footer
-Amaya et al. 2019 - https://doi.org/10.1016/j.strusafe.2019.101912
-:::
 
 ## (Simplified) Formula for aggregate uncertainty
 
@@ -1678,7 +1910,7 @@ Amaya et al. 2019 - https://doi.org/10.1016/j.strusafe.2019.101912
 
 ## Parcel sample
 
-![](figures/tax_parcel_summary.png){width=40% fig-align='center'}
+![](figures/tax_parcel_summary.png){width=100% fig-align='center'}
 
 
 ## Parcel characteristics -> total uncertainty
