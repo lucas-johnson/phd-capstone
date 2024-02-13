@@ -1207,12 +1207,15 @@ Quoted from McRoberts 2011 - https://doi.org/10.1016/j.rse.2010.10.013
 ::: {.column width="50%"}
 
 :::{.incremental}
-- Uncertainty in reference data
-- Uncertainty due to training the model on a limited sample
-- Uncertainty due to the model not being able to represent
-all of the variation in the response variable
-  - AKA prediction error
-
+- Reference data uncertainty
+- Sample variability
+- Residual variability
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 :::
 :::
 
@@ -1228,11 +1231,9 @@ Wadoux et al. 2023 - https://doi.org/10.1111/2041-210X.14106
 
 ::: {.column width="50%"}
 
-- [Uncertainty in reference data]{.underline}
-- [Uncertainty due to training the model on a limited sample]{.underline}
-- [Uncertainty due to the model not being able to represent
-all of the variation in the response variable]{style="opacity:.4"}
-  - [AKA prediction error]{style="opacity:.4"}
+- [Reference data uncertainty]{.underline}
+- [Sample variability]{.underline}
+- [Residual variability]{style="opacity:.4"}
 
 :::
 
@@ -1251,7 +1252,7 @@ Wadoux et al. 2023 - https://doi.org/10.1111/2041-210X.14106
 
 
 
-## Uncertainty in reference data
+## Reference data uncertainty
 
 How do we get tree-level biomass?
 
@@ -1283,7 +1284,7 @@ How do we get tree-level biomass?
 
 :::
 
-## Uncertainty in reference data
+## Reference data uncertainty
 
 How do we get tree-level biomass?
 
@@ -1314,7 +1315,8 @@ How do we get tree-level biomass?
 Heath et al. 2009 - https://www.fs.usda.gov/research/treesearch/33351
 :::
 
-## Uncertainty from a limited sample
+## Sample variability 
+
 
 - FIA is a random sample of the landscape
 
@@ -1329,7 +1331,8 @@ Heath et al. 2009 - https://www.fs.usda.gov/research/treesearch/33351
 Bootstrap sample figure - https://stats.stackexchange.com/questions/246726/size-of-bootstrap-samples
 :::
 
-## Uncertainty from a limited sample
+## Sample variability 
+
 
 - FIA is a random sample of the landscape
 
@@ -1344,7 +1347,8 @@ Bootstrap sample figure - https://stats.stackexchange.com/questions/246726/size-
 Bootstrap sample figure - https://stats.stackexchange.com/questions/246726/size-of-bootstrap-samples
 :::
 
-## Uncertainty from a limited sample
+## Sample variability 
+
 
 - FIA is a random sample of the landscape
 
@@ -1358,7 +1362,8 @@ Bootstrap sample figure - https://stats.stackexchange.com/questions/246726/size-
 Bootstrap sample figure - https://stats.stackexchange.com/questions/246726/size-of-bootstrap-samples
 :::
 
-## Uncertainty from a limited sample
+## Sample variability 
+
 
 - FIA is a random sample of the landscape
 
@@ -1373,7 +1378,8 @@ Bootstrap sample figure - https://stats.stackexchange.com/questions/246726/size-
 Bootstrap sample figure - https://stats.stackexchange.com/questions/246726/size-of-bootstrap-samples
 :::
 
-## Uncertainty from a limited sample
+## Sample variability 
+
 
 - FIA is a random sample of the landscape
 
@@ -1423,16 +1429,13 @@ Bootstrap sample figure - https://stats.stackexchange.com/questions/246726/size-
 
 ::: {.column width="50%"}
 
-- [Uncertainty in reference data]{style="opacity:.4"}
-- [Uncertainty due to training the model on a limited sample]{style="opacity:.4"}
-- [Uncertainty due to the model not being able to represent
-all of the variation in the response variable]{.underline}
-  - [AKA prediction error]{.underline}
+- [Reference data uncertainty]{style="opacity:.4"}
+- [Sample variability]{style="opacity:.4"}
+- [Residual variability]{.underline}
 
 :::
 
 ::: {.column width="50%"}
-Residual variability
 
 ![](figures/residuals.png)
 :::
@@ -1795,7 +1798,7 @@ Woodall et al. 2015 - https://doi.org/10.2737/NRS-GTR-154
 ![](figures/timeseries_combo.png){width=100% fig-align='center'}
 
 
-## Uncertainty in reference data
+## Reference data uncertainty
 
 - Measurement error distributions
 
@@ -1808,7 +1811,7 @@ Woodall et al. 2015 - https://doi.org/10.2737/NRS-GTR-154
 Distribution parameters from Yanai et al. 2023 - https://doi.org/10.1139/cjfr-2022-0062
 :::
 
-## Uncertainty in reference data
+## Reference data uncertainty
 
 - Measurement error distributions
 
@@ -1821,7 +1824,7 @@ Distribution parameters from Yanai et al. 2023 - https://doi.org/10.1139/cjfr-20
 Distribution parameters from Yanai et al. 2023 - https://doi.org/10.1139/cjfr-2022-0062
 :::
 
-## Uncertainty in reference data
+## Reference data uncertainty
 
 - Measurement error distributions
 
@@ -1834,7 +1837,7 @@ Distribution parameters from Yanai et al. 2023 - https://doi.org/10.1139/cjfr-20
 Distribution parameters from Yanai et al. 2023 - https://doi.org/10.1139/cjfr-2022-0062
 :::
 
-## Uncertainty in reference data
+## Reference data uncertainty
 
 Plot locations
 
@@ -1853,7 +1856,7 @@ Plot locations
 
 :::
 
-## Uncertainty in reference data
+## Reference data uncertainty
 
 Plot locations
 
@@ -1872,7 +1875,7 @@ Plot locations
 
 :::
 
-## Uncertainty in reference data
+## Reference data uncertainty
 
 Plot locations
 
